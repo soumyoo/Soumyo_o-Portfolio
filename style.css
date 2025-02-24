@@ -1,13 +1,43 @@
+/* 🔵 Blue → Red (Cool to Warm)
+
+-Feels like a progressive intensity increase (calm to energetic).
+
+-Works well for loading bars, progress indicators, or futuristic UI designs.
+
+-Good for backgrounds that start cool and end warm, giving a sense of action.
+
+background: linear-gradient(90deg, #00ffff, #8000ff, #ff0055);
+    box-shadow: 0 0 20px #00ffff, 0 0 40px #8000ff, 0 0 60px #ff0055;
+
+🔴 Red → Blue (Warm to Cool)
+
+-Feels like heat fading into calmness, more balanced and natural.
+
+-Works well for call-to-action buttons, where the red attracts attention first.
+
+-Ideal for hover effects, transitioning from bold to subtle.
+
+
+    background: linear-gradient(90deg, #ff004d, #8000ff, #00ffff);
+    box-shadow: 0 0 20px rgba(255, 0, 77, 0.8), 0 0 40px rgba(128, 0, 255, 0.8);
+
+
+
+*/
+
+
 *{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+
 body{
     background: #080808;
     color: #fff;
 }
+
 #header{
     width: 100%;
     height: 100vh;
@@ -15,8 +45,62 @@ body{
     background-size: cover;
     background-position: center;
 }
+
 .container{
     padding: 10px 10%;
 }
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    left: 0px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a:hover{
+    border-radius: 2px;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #8000ff, 0 0 30px #ff0055;  
+    transition: 0.6s;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background: linear-gradient(90deg, #00ffff, #8000ff, #ff0055);
+    box-shadow: 0 0 20px #00ffff, 0 0 40px #8000ff, 0 0 60px #ff0055;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
 
 
+
+
+
+
+
+
+/* Soumyo_o */

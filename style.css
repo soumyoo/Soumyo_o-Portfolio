@@ -56,8 +56,12 @@ nav{
     flex-wrap: wrap;
 }
 
-.logo{
-    width: 140px;
+#Soumyo_o{
+    font-size: 150%;
+    background: linear-gradient(90deg, #ff004d, #8000ff, #00ffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
 }
 
 nav ul li{
@@ -76,8 +80,14 @@ nav ul li a{
 
 nav ul li a:hover{
     border-radius: 2px;
-    text-shadow: 0 0 10px #00ffff, 0 0 20px #8000ff, 0 0 30px #ff0055;  
-    transition: 0.6s;
+    text-shadow: 
+    0 0 20px #00ffff,  /* Cyan */
+    0 0 40px #00ffff,  
+    0 0 60px #8000ff,  /* Purple */
+    0 0 80px #8000ff,  
+    0 0 100px #ff0055, /* Pink */
+    0 0 120px #ff0055;
+    transition: 0.5s;
 }
 
 nav ul li a::after{

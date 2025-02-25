@@ -57,11 +57,11 @@ nav{
 }
 
 #Soumyo_o{
-    font-size: 150%;
+    font-size: 200%;
     background: linear-gradient(90deg, #ff004d, #8000ff, #00ffff);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent
+    -webkit-text-fill-color: transparent;
 }
 
 nav ul li{

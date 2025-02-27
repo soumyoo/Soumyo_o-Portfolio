@@ -56,11 +56,13 @@ nav{
     flex-wrap: wrap;
 }
 
-.logo {
+
+.lodo {
     text-decoration: none;
 }
 
 #Soumyo_o{
+    position: fixed;
     font-size: 150%;
     background: linear-gradient(90deg, #00ffff, #8000ff, #ff0055);
     background-clip: text;
@@ -69,8 +71,9 @@ nav{
 }
 
 #occup{
+    margin-top: px;
     margin-left: 2px;
-    font-size: 17px;
+    font-size: 12px;
     font-weight: lighter;
     color: #fff;
 }
@@ -92,11 +95,11 @@ nav ul li a{
 nav ul li a:hover{
     border-radius: 2px;
     text-shadow: 
-    0 0 20px #00ffff,  /* Cyan */
+    0 0 20px #00ffff, 
     0 0 40px #00ffff,  
-    0 0 60px #8000ff,  /* Purple */
+    0 0 60px #8000ff, 
     0 0 80px #8000ff,  
-    0 0 100px #ff0055, /* Pink */
+    0 0 100px #ff0055,
     0 0 120px #ff0055;
     transition: 0.5s;
 }
@@ -121,8 +124,25 @@ nav ul li a:hover::after{
 .header-text{
     margin-top: 15%;
     font-size: 30px;
-    @keyframes 
 }
+
+@keyframes fadeInLeftToRight {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .header-text{
+    opacity: 0;
+    animation: fadeInLeftToRight 1s ease-out forwards;
+  }
+  
+
 
 #name{
     background: linear-gradient(90deg, #00ffff, #8000ff, #ff0055);
@@ -130,6 +150,10 @@ nav ul li a:hover::after{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+/* ------------------about------------- */
+
+
 
 
 

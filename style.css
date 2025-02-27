@@ -208,6 +208,7 @@ nav ul li a:hover::after{
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
+    padding-top: 4px;
 }
 
 
@@ -244,14 +245,13 @@ nav ul li a:hover::after{
     border-radius: 20px;
     position: absolute;
     background: linear-gradient(90deg, #00ffff, #8000ff, #ff0055);
-    box-shadow: 0 0 20px #00ffff, 0 0 40px #8000ff, 0 0 60px #ff0055;
     left: 0;
     bottom: -5px;
     transition: 0.5s;
 }
 
 .tab-links.active-link::after{
-    width: 50%;
+    width: 100%;
 }
 
 .tab-contents ul li{
@@ -273,6 +273,10 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+
+
+
+
 
 
 /* Soumyo_o */

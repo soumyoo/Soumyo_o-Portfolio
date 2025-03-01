@@ -55,27 +55,21 @@ body{
     background-position: center;
 }
 
-#about{
-    margin-left: -65px;
-}
-
-.container{
-    padding: 10px 10%;
-}
-
 #top-banner{
     width: 100%;
     position: fixed;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between ;
     flex-wrap: wrap;
     z-index: +3;
     top: 0;
     left: 0;
 }
 
-
+#homeload{
+    margin-left: 5px;
+}
 
 .lodo {
     text-decoration: none;
@@ -172,8 +166,16 @@ nav ul li a:hover::after{
 /* ------------------about------------- */
 
 #about{
+    margin-left: -65px;
+}
+
+#about{
     padding: 90px;
     color: #ababab;
+}
+
+.container{
+    padding: 10px 10%;
 }
 
 .row{
@@ -185,6 +187,9 @@ nav ul li a:hover::after{
 .about-col-1{
     flex-basis: 35%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @property --angle{
@@ -226,7 +231,6 @@ nav ul li a:hover::after{
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
-    padding-top: 4px;
 }
 
 
@@ -292,6 +296,58 @@ nav ul li a:hover::after{
     display: block;
 }
 
+/* --------------services---------------- */
+
+#services{
+    padding: 30px 0;
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div p{
+    color: #c4c4c4;
+    font-size: 14px;
+}
+
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    border-radius: 10px;
+    font-weight: 300;
+    transition: 0.5s;
+}
+
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list div:hover{
+    background: #6d00b5;
+    transform: translateY(-10px);
+}
+
+/* -----------------portfolio------------- */
 
 
 

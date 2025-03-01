@@ -35,21 +35,11 @@ body{
     background-position: center;
 }
 
-#top-banner{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between ;
-    flex-wrap: wrap;
-    z-index: +3;
-    top: 0;
-    left: 0;
-}
 
 #top-banner-list{
     position: fixed;
     right: 0;
-    margin-top: -30px;
+    margin-top: -65px;
     margin-right: 5px;
 }
 
@@ -420,6 +410,170 @@ nav ul li a:hover::after{
     box-shadow: 0 0 20px #00ffff, 0 0 40px #8000ff, 0 0 60px #ff0055;
     opacity: 1;
 }
+
+/* ---------------contact---------------- */
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact-left p{
+    margin-top: 30px;
+    transition: scale 0.3s;
+}
+
+.contact-left p:hover{
+    scale: 1.1;
+}
+
+.contact-left p i{
+    color:#8000ff ;
+    margin-right: 15px;
+    font-size: 25px;
+
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    display: inline-block;
+    color: #ababab;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #8000ff;
+    transform: translateY(-5px);
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.cv-btn {
+    margin-top: 30px;
+    position: relative;
+    display: inline-block;
+    padding: 20px 37px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    transition: scale 0.3s;
+}
+
+.cv-btn::after,
+.cv-btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 120%;
+    border-radius: 10px;
+    background: conic-gradient(from var(--angle), #00ffff, #8000ff, #ff0055, #00ffff);
+    translate: -50% -50%;
+    z-index: -1;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+}
+
+.cv-btn:hover{
+    scale: 1.1;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+.contact-right form input, form textarea{
+width: 100%;
+border: 0;
+outline: none;
+background: #262626;
+margin: 15px 0;
+padding: 15px;
+color: #fff;
+font-size: 18px;
+border-radius: 6px;
+}
+
+
+.submit-btn{
+    padding: 12px 27px;
+    border-radius: 10px;
+    background: #8000ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+
+/* -------------css  for smartphone----------- */
+
+@media only screen and (max-width:600px){
+
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+    .header-text h1{
+        font-size: 40px;
+        
+    }
+
+    #homeload{
+        font-size: 20px;
+    }
+    
+
+
+
+
+}
+
+
+
+
+
+
+
 
 
 

@@ -6,20 +6,29 @@
     <title>Soumyojit Choudhury</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/161e80c4dd.js" crossorigin="anonymous"></script>
+
     <video class="video-bg" src="images/bg_image.mp4" autoplay loop muted playsinline>
         Your browser does not support the video tag.
     </video>
+<!-- 
+    <audio autoplay loop>
+        <source src="background-music.mp3" type="audio/mpeg">
+      </audio> -->
+      
+
 </head>
 
 <body><div id="header">
        <div class="container">
         <nav id="top-banner">
+
             <h1 id="homeload"><a class="lodo" href="#"><span id="Soumyo_o">Soumyo_o</span><br><span id="occup">Portfolio</span></a></h1>
+            
             <ul id="top-banner-list">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Projects</a></li>
                 <li><a href="#">Contact</a></li>
                 </a></li>
             </ul>
@@ -88,12 +97,12 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam tempora ullam aspernatur a magnam. Totam vitae perspiciatis recusandae, deserunt veniam id voluptatem molestiae quae quaerat molestias aperiam ex vero nostrum.</p>
                 <a href="#">Learn more</a>
             </div>
-            <div>
+            <!-- <div>
                 <i class="fa-solid fa-code"></i>
                 <h2>Web Development</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam tempora ullam aspernatur a magnam. Totam vitae perspiciatis recusandae, deserunt veniam id voluptatem molestiae quae quaerat molestias aperiam ex vero nostrum.</p>
                 <a href="#">Learn more</a>
-            </div>
+            </div> -->
             
         </div>
     </div>
@@ -102,47 +111,79 @@
 
 <div id="portfolio">
     <div class="container">
-        <h1 class="sub-title">My Works</h1>
+        <h1 class="sub-title">My Work</h1>
         <div class="work-list">
             <div class="work">
                 <img src="images/work-1.png">
                 <div class="layer">
                     <h3>Mini Game</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, aut.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <p>RPG Dragon Repeller.</p>
+                    <a href="https://soumyoo.github.io/RPG-Dragon-Repeller/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="images/work-2.png">
+                <img src="images/work-1.png">
                 <div class="layer">
                     <h3>Nothing to show</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, aut.</p>
-                    <a href="#"><i class="fa-solid fa-face-frown"></i></a>
+                    <p>Nothing has been published yet.</p>
+                    <!-- href here -->
+                    <a         ><i class="fa-solid fa-face-frown"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="images/work-3.png">
+                <img src="images/work-1.png">
                 <div class="layer">
                     <h3>Nothing to show</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, aut.</p>
-                    <a href="#"><i class="fa-solid fa-face-frown"></i></i></a>
+                    <p>Nothing has been published yet.</p>
+                    <!-- href here -->
+                    <a             ><i class="fa-solid fa-face-frown"></i></i></a>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">See more</a>
+        <a href="https://github.com/soumyoo" target="_blank" class="btn">See more</a>
     </div>
 </div>
 
 <!-- ------------------contact--------------------- -->
 <div id="contact">
-    <div class="container">
+    <div class="container"> 
         <div class="row">
             <div class="contact-left">
-                <h1>Contact me</h1>
+                <h1 class="sub-title">Contact me</h1>
+
+                <a href="mailto:soumyoocontact@gmail.com" target="_blank">
+                <p><i class="fa-solid fa-paper-plane"></i>soumyoocontact@gmail.com</p></a>
+
+                <a href="tel:+917005708894" target="_blank">
+                <p><i class="fa-solid fa-phone"></i>+917005708894</p></a>
+
+                <div class="social-icons">
+
+                    <a href="https://x.com/soumyo_o" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+
+                    <a href="https://www.instagram.com/soumyo_o/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+
+                    <a href="https://github.com/soumyoo" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+
+                    <a href="https://www.linkedin.com/in/soumyojitchoudhury/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+                </div>
+                <a href="#" class="cv-btn" target="_blank">Download <br>Resume(CV)</a>
             </div>
-            <div class="contact-right"></div>
+            <div class="contact-right">
+                <form>     
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your email address" required>
+                    <textarea name="Message" rows="6" placeholder="Write your Message"></textarea>
+                    <button class="submit-btn" type="submit">Submit</button>
+                </form>
+            </div>
         </div>
     </div>
+</div>
+
+<div class="copyright">
+    <p><i class="fa-regular fa-copyright"></i> 2025 Soumyo_o. All rights reserved.</p>
 </div>
 
 

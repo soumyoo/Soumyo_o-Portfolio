@@ -6,6 +6,22 @@ background: linear-gradient(90deg, #00ffff, #8000ff, #ff0055);
 */
 
 
+.video-bg{
+    z-index: -20;
+}
+
+
+.ufo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    pointer-events: none;
+    transition: transform 0.1s;
+    z-index: -1;
+
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -15,6 +31,7 @@ background: linear-gradient(90deg, #00ffff, #8000ff, #ff0055);
 
 html{
     scroll-behavior: smooth;
+    
 }
 
 .video-bg {
@@ -37,6 +54,7 @@ body{
     /* background-image: url(); */
     background-size: cover;
     background-position: center;
+
 }
 
 
@@ -152,6 +170,10 @@ nav ul li a:hover::after{
 #about{
     padding: 90px;
     color: #ababab;
+}
+
+.paragraph{
+    color: #c8c8c8;
 }
 
 .container{
@@ -290,7 +312,7 @@ nav ul li a:hover::after{
 }
 
 .services-list div p{
-    color: #c4c4c4;
+    color: #ababab;
     font-size: 14px;
 }
 
@@ -325,7 +347,14 @@ nav ul li a:hover::after{
 .services-list div:hover{
     background: #8000ff;
     transform: translateY(-10px);
+    color: #fff;
 }
+
+.services-list div:hover p{
+    color: #fff;
+}
+
+
 
 /* -----------------portfolio------------- */
 #portfolio{
@@ -416,6 +445,10 @@ nav ul li a:hover::after{
 }
 
 /* ---------------contact---------------- */
+
+#contact{
+    z-index: 2;
+}
 
 .contact-left{
     flex-basis: 35%;
@@ -560,6 +593,10 @@ border-radius: 6px;
 
 @media only screen and (max-width:450px){
 
+    .ufo{
+        display: none;
+    }
+
     .header-text{
         margin-top: 100%;
         font-size: 16px;
@@ -589,13 +626,13 @@ border-radius: 6px;
         width: 160px;
         height: 1000vh;
         padding-top: 50px;
-        z-index: 2;
+        z-index: 5;
         transition: right 0.3s;
     }
 
     i#bars.fa-solid.fa-bars.bar3{
         position: fixed;
-        z-index: 5;
+        z-index: 3;
         margin-left: 80vw;
     }
     

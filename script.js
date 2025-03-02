@@ -63,7 +63,19 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     });
 });
 
+// -------------------UFO----------------------
 
+const ufo = document.getElementById("ufo");
 
+        document.addEventListener("mousemove", (e) => {
+            const offsetX = -170; // Adjust distance from cursor
+            const offsetY = -100;
 
+            // Get page scroll offsets
+            const scrollX = window.scrollX || document.documentElement.scrollLeft;
+            const scrollY = window.scrollY || document.documentElement.scrollTop;
+            
+            // Move UFO relative to scroll
+            ufo.style.transform = `translate(${e.clientX + offsetX + scrollX}px, ${e.clientY + offsetY + scrollY}px)`;
+        });
 

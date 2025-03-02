@@ -23,15 +23,22 @@
         <nav id="top-banner">
 
             <h1 id="homeload"><a class="lodo" href="#"><span id="Soumyo_o">Soumyo_o</span><br><span id="occup">Portfolio</span></a></h1>
-            
+
             <ul id="top-banner-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-                </a></li>
+
+                <li><a href="#header"><i class="fa-solid fa-house"></i> Home</a></li>
+
+                <li><a href="#about"><i class="fa-solid fa-address-card"></i> About</a></li>
+
+                <li><a href="#services"><i class="fa-solid fa-handshake"></i> Services</a></li>
+
+                <li><a href="#portfolio"><i class="fas fa-folder"></i> Projects</a></li>
+
+                <li><a href="#contact"><i class="fa-solid fa-square-phone"></i> Contact</a></li>
+
+                <i id="bars" class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
+            <i id="bars" class="fa-solid fa-bars bar3" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <!-- <p>Full-Stack Developer</p> -->
@@ -52,7 +59,7 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quasi omnis, doloremque exercitationem modi suscipit animi ducimus nobis non? Consectetur sit incidunt asperiores provident aliquid dolorem, hic fugiat autem consequuntur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quasi omnis, doloremque exercitationem modi suscipit animi ducimus nobis non? Consectetur sit incidunt asperiores provident aliquid dolorem, hic fugiat autem consequuntur!</p>
+                    <p>I'm a UI/UX designer currently developing my skills in full-stack development. I focus on creating satisfying user experiences while building functional and scalable websites. Always learning and refining my approach to design and development.</p>
                     <div class="tab-titles">
 
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -94,8 +101,8 @@
             <div>
                 <i class="fa-solid fa-laptop-code"></i>
                 <h2>UI/UX designing</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam tempora ullam aspernatur a magnam. Totam vitae perspiciatis recusandae, deserunt veniam id voluptatem molestiae quae quaerat molestias aperiam ex vero nostrum.</p>
-                <a href="#">Learn more</a>
+                <p>I design clean, user-friendly interfaces that make websites easy to use. My focus is on clear layouts, smooth navigation, and a great user experience. I create responsive and visually appealing designs that work well on all devices.</p>
+                <a href="#contact">Learn more</a>
             </div>
             <!-- <div>
                 <i class="fa-solid fa-code"></i>
@@ -168,15 +175,21 @@
                     <a href="https://www.linkedin.com/in/soumyojitchoudhury/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
 
                 </div>
-                <a href="#" class="cv-btn" target="_blank">Download <br>Resume(CV)</a>
+                <a href="#" class="cv-btn" target="_blank">Resume</a>
             </div>
             <div class="contact-right">
-                <form>     
-                    <input type="text" name="Name" placeholder="Your name" required>
-                    <input type="email" name="Email" placeholder="Your email address" required>
-                    <textarea name="Message" rows="6" placeholder="Write your Message"></textarea>
-                    <button class="submit-btn" type="submit">Submit</button>
-                </form>
+                
+
+                
+    <form id="contactForm">
+        <input type="text" name="Name" placeholder="Your name" required>
+        <input type="email" name="Email" placeholder="Your email address" required>
+        <textarea name="Message" rows="6" placeholder="Write your Message"></textarea>
+        <button class="submit-btn" type="submit">Submit</button>
+        <p id="form-status" style="display: none;">Submitting...</p>
+    </form>
+
+
             </div>
         </div>
     </div>
@@ -185,7 +198,6 @@
 <div class="copyright">
     <p><i class="fa-regular fa-copyright"></i> 2025 Soumyo_o. All rights reserved.</p>
 </div>
-
 
 <script src="script.js"></script>
 </body>

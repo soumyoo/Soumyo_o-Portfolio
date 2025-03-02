@@ -13,6 +13,10 @@ background: linear-gradient(90deg, #00ffff, #8000ff, #ff0055);
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .video-bg {
     position: fixed;
     width: 100%;
@@ -30,7 +34,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url();
+    /* background-image: url(); */
     background-size: cover;
     background-position: center;
 }
@@ -39,12 +43,7 @@ body{
 #top-banner-list{
     position: fixed;
     right: 0;
-    margin-top: -65px;
     margin-right: 5px;
-}
-
-#homeload{
-    margin-left: 5px;
 }
 
 .lodo {
@@ -66,17 +65,22 @@ body{
     color: #fff;
 }
 
+nav ul{
+    z-index: 10;
+    display: block;
+}
+
 nav ul li{
-    display: inline-block;
+    display: block;
     list-style: none;
-    margin: 10px 20px;
-    left: 0px;
+    margin: 70px 20px;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 nav ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
     position: relative;
 }
 
@@ -403,7 +407,7 @@ nav ul li a:hover::after{
     text-decoration: none;
     color: #fff;
     transition: opacity 1s, box-shadow 0.5s;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 .btn:hover{
@@ -544,9 +548,17 @@ border-radius: 6px;
 }
 
 
+
+
 /* -------------css  for smartphone----------- */
 
-@media only screen and (max-width:600px){
+#bars{
+    display: none;
+}
+
+
+
+@media only screen and (max-width:450px){
 
     .header-text{
         margin-top: 100%;
@@ -561,10 +573,74 @@ border-radius: 6px;
     #homeload{
         font-size: 20px;
     }
+
+    #bars{
+        display: block;
+        font-size: 30px;
+    }
+
+    #top-banner-list{
+        background: #8000ff;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        margin-top: -8px;
+        margin-right: -8px;
+        width: 160px;
+        height: 1000vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.3s;
+    }
+
+    i#bars.fa-solid.fa-bars.bar3{
+        position: fixed;
+        z-index: 5;
+        margin-left: 80vw;
+    }
     
+    nav ul li{
+        display: block;
+        margin: 25px;
+        padding: 10px;
+        font-size: 15px;
+    }
 
+    #bars{
+        position: absolute;
+        left: 25px;
+        top: 25px;
+        cursor: pointer;
+    }
 
+    .sub-title{
+        font-size: 40px;
+    }
 
+    .about-col-1 , .about-col-2{
+        flex-basis: 100%;
+    }
+
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+
+    .about-col-2{
+        font-size: 14px;
+    }
+
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+
+    .copyright{
+        font-size: 14px;
+    }
 
 }
 

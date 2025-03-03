@@ -79,3 +79,18 @@ const ufo = document.getElementById("ufo");
             ufo.style.transform = `translate(${e.clientX + offsetX + scrollX}px, ${e.clientY + offsetY + scrollY}px)`;
         });
 
+
+    //   -------------------load------------------
+    
+    var loader = document.getElementById("preloader");
+
+    window.addEventListener("load", function(){
+        loader.style.display="none";
+    })
+    
+
+
+
+
+
+

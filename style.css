@@ -594,7 +594,8 @@ border-radius: 6px;
 @media only screen and (max-width:450px){
 
     .ufo{
-        display: none;
+        height: 70px;
+        width: 70px;
     }
 
     .header-text{
@@ -635,6 +636,12 @@ border-radius: 6px;
         z-index: 3;
         margin-left: 80vw;
     }
+
+    i#bars.fa-solid.fa-xmark.bar2{
+        margin-left: 28vw;
+        margin-top: 1.5vh;
+    }
+
     
     nav ul li{
         display: block;
@@ -681,8 +688,16 @@ border-radius: 6px;
 
 }
 
+/* -----------------laod screen------------------ */
 
-
+#preloader{
+    background: #000 url(images/loader\ gif.gif) no-repeat center center;
+    height: 100vh;
+    background-size: 15%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
 
 
 

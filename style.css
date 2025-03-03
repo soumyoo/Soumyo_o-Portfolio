@@ -690,14 +690,14 @@ border-radius: 6px;
 
 /* -----------------laod screen------------------ */
 
-#preloader{
+/* #preloader{
     background: #000 url(images/loader\ gif.gif) no-repeat center center;
     height: 100vh;
     background-size: 15%;
     width: 100%;
     position: fixed;
     z-index: 100;
-}
+} */
 
 
 
